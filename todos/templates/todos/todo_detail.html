@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo Detail</title>
+</head>
+<body>
+    <h1>Todo Detail</h1>
+    <h2>{{ todo.title }}</h2>
+    <p>{{ todo.description }}</p>
+    <p>Status: {% if todo.completed %}Completed{% else %}Pending{% endif %}</p>
+    <p>Created at: {{ todo.created_at }}</p>
+</body>
+</html>
