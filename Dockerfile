@@ -1,3 +1,7 @@
+LABEL org.opencontainers.image.source=https://github.com/Borghese-Gladiator/todo-django-app
+LABEL org.opencontainers.image.description="Sample image description"
+LABEL org.opencontainers.image.licenses=MIT
+
 # Use the official Python image as the base image
 FROM python:3.10
 
