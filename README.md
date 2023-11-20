@@ -144,3 +144,7 @@ This project is to test out my local Kubernetes setup and refresh some Django.
 ## Deployment
 - deploy to Railway
 - deploy via Harness to Kubernetes on home server
+
+
+## References
+- https://medium.com/@albertazzir/blazing-fast-python-docker-builds-with-poetry-a78a66f5aed0
