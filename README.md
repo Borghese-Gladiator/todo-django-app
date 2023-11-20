@@ -1,6 +1,10 @@
 # Django Template Project
 This project is to test out my local Kubernetes setup and refresh some Django.
 
+# Setup
+## Caveats
+- on Windows, you can't run the production server `gunicorn` because it has Linux dependencies
+
 # Notes
 ## Scaffolding
 - initialize project with Poetry
@@ -9,6 +13,7 @@ This project is to test out my local Kubernetes setup and refresh some Django.
   cd todo-django-app
   poetry init
   poetry add django
+  poetry add gunicorn  # production server (does not come with Django)
   ```
 - create Django app called todo-django-app (replace `<real_name>`)
   - linux
@@ -144,7 +149,6 @@ This project is to test out my local Kubernetes setup and refresh some Django.
 ## Deployment
 - deploy to Railway
 - deploy via Harness to Kubernetes on home server
-
 
 ## References
 - https://medium.com/@albertazzir/blazing-fast-python-docker-builds-with-poetry-a78a66f5aed0

@@ -33,5 +33,10 @@ RUN poetry install --without dev
 # Expose the port the Django app runs on
 EXPOSE 8000
 
-# Run the Django development server
-ENTRYPOINT ["poetry", "run", "python", "manage.py", "runserver", "0.0.0.0:8000"]
+# Collect static files
+RUN python manage.py collectstatic --noinput
+# Run Gunicorn
+CMD ["poetry", "run", "gunicorn", "todo-django-app.wsgi", "--bind", "0.0.0.0:8000"]
+
+## Run the Django development server
+## ENTRYPOINT ["poetry", "run", "python", "manage.py", "runserver", "0.0.0.0:8000"]
