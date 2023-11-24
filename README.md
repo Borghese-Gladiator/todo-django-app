@@ -2,6 +2,12 @@
 This project is to test out my local Kubernetes setup and refresh some Django.
 
 # Setup
+```
+poetry install
+poetry shell
+python manage.py runserver
+```
+
 ## Caveats
 - on Windows, you can't run the production server `gunicorn` because it has Linux dependencies
 
