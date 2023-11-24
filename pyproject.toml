@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.10"
 Django = "^4.2.7"
 gunicorn = "^21.2.0"
+markdown = "^3.5.1"
 
 [tool.poetry.group.dev.dependencies]
 

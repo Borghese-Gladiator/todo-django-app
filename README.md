@@ -151,9 +151,18 @@ python manage.py runserver
     New-Item -ItemType File -Path kubernetes\ingress.yaml
     New-Item -ItemType File -Path kubernetes\service.yaml
     ```
+- added Markdown functionality
+  ```
+  poetry add markdown
+  poetry shell
+  python manage.py startapp dmd_app
+  python manage.py makemigrations
+  python manage.py migrate
+  python manage.py createsuperuser
+  ```
 
 ## Deployment
-- deploy to Railway
+- deploy to Railway => NO FREE TIER `:(`
 - deploy via Harness to Kubernetes on home server
 
 ## References
